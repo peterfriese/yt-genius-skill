@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+env/
+venv/
+ENV/
+
+# Logs
+*.log
+
+# Transactional/Temporary artifacts from scripts
+scripts/*.txt
+scripts/error_output.txt
+scripts/transcript_check.txt
+scripts/transcript_output.txt
+
+# OS/Editor
+.DS_Store
+.vscode/
+.idea/
+
+# tmp folder
+tmp/

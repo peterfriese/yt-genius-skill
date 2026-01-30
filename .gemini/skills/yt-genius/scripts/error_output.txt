@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/Users/peterfriese/Workspace/2_Areas/Firebase-YouTube/yt-genius/.gemini/skills/yt-genius/scripts/get_transcript.py", line 3, in <module>
+    from youtube_transcript_api import YouTubeTranscriptApi
+ModuleNotFoundError: No module named 'youtube_transcript_api'
