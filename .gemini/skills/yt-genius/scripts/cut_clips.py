@@ -20,10 +20,17 @@ def cut_clip(video_url, start_time, end_time, output_path):
     # Then we use ffmpeg to download only the segment
     try:
         # Get formats
+        # Use the yt-dlp from the current environment (sys.executable's directory)
+        yt_dlp_cmd = os.path.join(os.path.dirname(sys.executable), "yt-dlp")
+        if not os.path.exists(yt_dlp_cmd):
+            # Fallback to system yt-dlp if not found in venv
+            yt_dlp_cmd = "yt-dlp"
+            
         cmd_get_url = [
-            "yt-dlp",
+            yt_dlp_cmd,
             "-g",
             "-f", "bestvideo[height<=720]+bestaudio/best[height<=720]",
+            "--force-ipv4",
             video_url
         ]
         urls = subprocess.check_output(cmd_get_url).decode().split('\n')
