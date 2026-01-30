@@ -18,6 +18,7 @@ This project provides a specialized skill for AI agents (like Gemini and Antigra
 
 ### Project Structure
 - `.gemini/skills/yt-genius/`: Contains the main `SKILL.md` and helper scripts.
+- `subskills/`: Specialized agents (e.g., `article-expert`) for deep-dive tasks.
 - `scripts/`: Python utilities for data fetching. Use the virtual environment in `.venv/` if available.
 - `GEMINI.md`: This file—serves as the source of truth for AI agent behavior in this repo.
 

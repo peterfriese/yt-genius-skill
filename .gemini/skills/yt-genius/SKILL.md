@@ -60,13 +60,9 @@ Draft copy for:
 2.  **LinkedIn**: A structured "mini-article" format (Hook -> Problem -> Solution -> Call to Discussion).
 3.  **Bluesky / Threads / Mastodon**: Short, conversational style.
 4.  **Twitter Long-form Article**:
-    *   **Hero Images**: Use `generate_image` to create TWO hero images and document their paths in the article:
-        - **Nano-Banana**: Colorful, abstract, high contrast.
-        - **Sketch**: Elegant black and white line drawing style.
-    *   **Automation**: 
-        1. Save the final article markdown to `tmp/twitter_article.md` using `write_to_file`.
-        2. Identify 3-5 high-impact clips and use `scripts/cut_clips.py` to generate them.
-    *   **Clips**: Insert `[EMBED VIDEO CLIP: tmp/clip_XX.mp4]` placeholders where the video content matches the text.
+    *   **Delegation**: Use the `./subskills/article-expert/SKILL.md` subskill to generate a premium long-form article.
+    *   **Context**: Pass the transcript and the identified "Hook" to the subskill.
+    *   **Outcome**: The subskill will handle image generation, clipping, and final markdown assembly.
 5.  **YouTube Community**: A poll or "Behind the scenes" teaser.
 
 ## Rules
