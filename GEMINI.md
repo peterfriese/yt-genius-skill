@@ -7,6 +7,7 @@ This project provides a specialized skill for AI agents (like Gemini and Antigra
 - **Metadata Generation**: Creates high-CTR titles, SEO descriptions, and hashtags.
 - **Precision Chapters**: Follows a strict workflow to map transcript segments to exact timestamps.
 - **Social Media Repurposing**: Drafts platform-specific copy for Twitter, LinkedIn, and more.
+- **Twitter Articles**: Converts transcripts into structured, long-form articles with embedded clip markers and hero image concepts.
 
 ## AI Instructions & Rules
 

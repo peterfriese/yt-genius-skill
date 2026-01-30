@@ -11,10 +11,9 @@ ENV/
 *.log
 
 # Transactional/Temporary artifacts from scripts
-scripts/*.txt
-scripts/error_output.txt
-scripts/transcript_check.txt
-scripts/transcript_output.txt
+.gemini/skills/yt-genius/scripts/*.txt
+!.gemini/skills/yt-genius/scripts/requirements.txt
+firebase-debug.log
 
 # OS/Editor
 .DS_Store
@@ -23,3 +22,5 @@ scripts/transcript_output.txt
 
 # tmp folder
 tmp/
+*.mp4
+*.webm
